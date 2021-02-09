@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 100px;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 120px;
+  left: 0px;
+  top:0px;
+  padding:10px;
+  background: #F2E5CB;
+
+}
+
+header .logo {
+  margin-left: 20px;
+  flex:30%;
+}
+
+header .navLinks {
+  flex:50%;
+  /*border: 2px solid red;*/
+  list-style: none;
+
+}
+
+header .navLinks li {
+  display: inline-block;
+  margin-left:27px;
+}
+
+
+header .navLinks li a {
+  margin-left: 40px;
+  text-align: center;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  letter-spacing: 0.245em;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+header .navLinks li a:hover {
+  color:white;
+  size: 1.1%;
+}
+
+.banner {
+  /*display: flex;*/
+  position: absolute;
+  background-size: cover;
+  top:120px;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  
+  /*background-image: url("images/bgImg1.jpg");*/
+  
+}
+
+ .overlay {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+} 
+
+h1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 144px;
+  line-height: 216px;
+  letter-spacing: 0.14em;
+
+  color: #FFFFFF;
+  margin-top: 150px;
+  margin-left: 70px;
+}
+
+
+
+@media screen and (max-width: 500px) {
+  
+}
+
+/*________STATIONS PAGE_____________________________________________*/
+
+.banner1 { 
+  /*display: flex; */
+  position: absolute; 
+  background-size: cover;
+  top:120px; 
+  width: 100%; 
+  /*height: 100vh;*/ /*background-color: red;*/ 
+  background:#5C3239; 
+  padding: 50px 40px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1rem;
+  grid-auto-flow: dense;
+  padding:10rem 86px;
+} /* we used grid to set CARD ARRANGEMENT */
+
+.card {
+  /*position: relative;*/
+  width: 320px;
+  height: 420px;
+  background: #723D46;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 55px;
+}/* we format each card detail
+
+
+.card .imgBx {
+  position: relative;
+  width: 100%;
+  height:80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  background-color: white;
+  /*border-radius: 20px;*/
+}
+
+.card .imgBx img{
+  width: auto;
+  max-height: 150px;
+  image-rendering: auto;
+
+}
+
+.card:hover  {
+  transform: scale(1.1);
+}/* Target the card image and the card on hover state*/
+
+
+.card .contentBx {
+  position:relative;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1;
+  margin-top: 100px;
+} /*Targets the card writeups */
+
+.card .contentBx h3 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 36px;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 0.245em;
+
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: -10px;
+
+}
+
+.card .contentBx h2 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 0.245em;
+
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: -10px;
+}
+
+.card .contentBx .twitter {
+  position:relative;
+  padding: 5px 30px;
+  margin-top: 15px;
+  color: #fff;
+  text-decoration:none;
+  background: #5C3239;
+  border-radius: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.5s;  
+}
+
+.card .contentBx .play {
+  position:relative;
+  padding: 10px 30px;
+  margin-top: 15px;
+  color: #fff;
+  text-decoration:none;
+  background: #5C3239;
+  border-radius: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.5s;  
+}
+
+
+.card .contentBx .twitter:hover, .card .contentBx .play:hover {
+  color:#000;
+  background: #fff;
+}
