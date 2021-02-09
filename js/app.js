@@ -15,14 +15,14 @@ function fetchData() {
                                 </div>
 
                                 <div class="contentBx">
-                                    <!--<a href="${user.link}" target="_blank" class="play"><i class="fas fa-play" fa-2x"></i></a>-->                                    
+                                    
 
 
                                     <audio controls>
                                         <source src="${user.link}" type="audio/mpeg">
                                     </audio>
-                                    <h3> ${user.name}</h3>
-                                    <h2 class="price">${user.state}</h2>
+                                    <h3> ${user.name|| ""}</h3>
+                                    <h2 class="price">${user.state|| ""}</h2>
                                     <a href="${user.twitter}" class="twitter" target="_blank"><i class="fab fa-twitter fa-1.5x"></i></a>
 
                                 </div>
@@ -63,13 +63,13 @@ function fetchPodData() {
                                 </div>
 
                                 <div class="contentBx">
-                                    <!--<a href="${user.link}" target="_blank" class="play"><i class="fas fa-play" fa-2x"></i></a>-->                                    
+                                    
 
 
                                     <audio controls>
-                                        <source src="${user.link}" type="audio/mpeg">
+                                        <source src="${user.link|| ""}" type="audio/mpeg">
                                     </audio>
-                                    <h3> ${user.name}</h3>
+                                    <h3> ${user.name|| ""}</h3>
                                     <h2 class="price">${user.state|| ""}</h2>
                                     <a href="${user.twitter}" class="twitter" target="_blank"><i class="fab fa-twitter fa-1.5x"></i></a>
 
